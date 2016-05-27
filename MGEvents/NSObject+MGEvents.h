@@ -179,7 +179,7 @@ On change of the given keypath, perform the given block.
         NSLog(@"my selected state changed to: %@", box.selected ? @"ON" : @"OFF");
     }];
 */
-- (void)onChangeOf:(NSString *)keypath do:(MGBlock)block;
+- (void)onChangeOf:(NSString *)keypath Do:(MGBlock)block;
 
 /**
 On change of any of the given keypaths, perform the given block.
@@ -189,7 +189,7 @@ On change of any of the given keypaths, perform the given block.
         NSLog(@"my highlighted state is: %@", box.highlighted ? @"ON" : @"OFF");
     }];
 */
-- (void)onChangeOfAny:(NSArray *)keypaths do:(MGBlock)block;
+- (void)onChangeOfAny:(NSArray *)keypaths Do:(MGBlock)block;
 
 @property (nonatomic, copy) MGBlock onDealloc;
 

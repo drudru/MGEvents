@@ -168,7 +168,7 @@ static char *MGDeallocActionKey = "MGDeallocActionKey";
 
 #pragma mark - Property observing
 
-- (void)onChangeOf:(NSString *)keypath do:(MGBlock)block {
+- (void)onChangeOf:(NSString *)keypath Do:(MGBlock)block {
 
   // get observers for this keypath
   NSMutableArray *observers = self.MGObservers[keypath];
@@ -202,9 +202,9 @@ static char *MGDeallocActionKey = "MGDeallocActionKey";
   });
 }
 
-- (void)onChangeOfAny:(NSArray *)keypaths do:(MGBlock)block {
+- (void)onChangeOfAny:(NSArray *)keypaths Do:(MGBlock)block {
   for (NSString *keypath in keypaths) {
-    [self onChangeOf:keypath do:block];
+    [self onChangeOf:keypath Do:block];
   }
 }
 
