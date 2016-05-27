@@ -2,6 +2,8 @@
 //  Created by matt on 24/08/12.
 //
 
+#import <Cocoa/Cocoa.h>
+
 typedef void(^MGBlock)();
 typedef void(^MGBlockWithContext)(id context);
 
